@@ -424,7 +424,7 @@ class Image2Text:
     FUNCTION = "generate"
     CATEGORY = "Skywork-UniPic"
 
-    def generate(self, config, checkpoint, image，prompt, image_size):
+    def generate(self, config, checkpoint, image, prompt, image_size):
         
         config = Config.fromfile(config)
         model = BUILDER.build(config.model).eval().cuda()
