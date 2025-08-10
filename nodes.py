@@ -8,8 +8,8 @@ import torch
 from torch.nn.utils.rnn import pad_sequence
 from einops import rearrange
 
-from src.builder import BUILDER
-from src.datasets.utils import crop2square
+from .src.builder import BUILDER
+from .src.datasets.utils import crop2square
 
 
 def preprocess_image(image: Image.Image, image_size: int, dtype: torch.dtype = torch.float32) -> torch.Tensor:
